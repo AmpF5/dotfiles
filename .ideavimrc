@@ -1,0 +1,70 @@
+" .ideavimrc is a configuration file for IdeaVim plugin. It uses
+"   the same commands as the original .vimrc configuration.
+" You can find a list of commands here: https://jb.gg/h38q75
+" Find more examples here: https://jb.gg/share-ideavimrc
+
+
+"" -- Suggested options --
+" Show a few lines of context around the cursor. Note that this makes the
+" text scroll if you mouse-click near the start or end of the window.
+set scrolloff=5
+
+" Do incremental searching.
+set incsearch
+
+" Don't use Ex mode, use Q for formatting.
+map Q gq
+
+" --- Enable IdeaVim plugins https://jb.gg/ideavim-plugins
+
+" Highlight copied text
+Plug 'machakann/vim-highlightedyank'
+" Commentary plugin
+Plug 'tpope/vim-commentary'
+
+
+"" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
+"" Map \r to the Reformat Code action
+"map \r <Action>(ReformatCode)
+
+"" Map <leader>d to start debug
+"map <leader>d <Action>(Debug)
+
+"" Map \b to toggle the breakpoint on the current line
+"map \b <Action>(ToggleLineBreakpoint)
+" Remove previous <C-a> mappings if present
+unmap <C-a>
+
+" Map leader (space) to move right by 1 char
+nmap <Space> l
+
+" Map double leader and Option+P to Navigate File
+nmap <Space><Space> <Action>(GotoFile)
+nmap <A-p> <Action>(GotoFile)
+
+" Map Option+W to close the current window/tab
+nmap <A-w> <Action>(CloseActiveTab)
+
+" Map Option+Shift+1/2/3... to open a new tab and switch to it
+nmap <A-S-1> <Action>(NewTab)<Action>(SelectTab1)
+nmap <A-S-2> <Action>(NewTab)<Action>(SelectTab2)
+nmap <A-S-3> <Action>(NewTab)<Action>(SelectTab3)
+nmap <A-S-4> <Action>(NewTab)<Action>(SelectTab4)
+nmap <A-S-5> <Action>(NewTab)<Action>(SelectTab5)
+nmap <A-S-6> <Action>(NewTab)<Action>(SelectTab6)
+nmap <A-S-7> <Action>(NewTab)<Action>(SelectTab7)
+nmap <A-S-8> <Action>(NewTab)<Action>(SelectTab8)
+nmap <A-S-9> <Action>(NewTab)<Action>(SelectTab9)
+
+" Map Option+1/2/3... to jump to corresponding window/tab
+nmap <A-1> <Action>(SelectTab1)
+nmap <A-2> <Action>(SelectTab2)
+nmap <A-3> <Action>(SelectTab3)
+nmap <A-4> <Action>(SelectTab4)
+nmap <A-5> <Action>(SelectTab5)
+nmap <A-6> <Action>(SelectTab6)
+nmap <A-7> <Action>(SelectTab7)
+nmap <A-8> <Action>(SelectTab8)
+nmap <A-9> <Action>(SelectTab9)
+
+nmap <leader>t <Action>(NewTab)

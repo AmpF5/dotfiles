@@ -1,0 +1,40 @@
+{
+  "title": "Mac OSX: disable minimising windows",
+  "maintainers": ["thecarlo"],
+  "rules": [
+    {
+      "description": "Mac OSX: disable cmd + h to prevent minimising an application window",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "h",
+            "modifiers": { "mandatory": ["command"] }
+          },
+          "to": []            // nothing is sent → keystroke is swallowed
+        }
+      ]
+    },
+    {
+      "description": "Mac OSX: disable cmd + option + h + m to prevent minimising all windows",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "h",
+            "modifiers": { "mandatory": ["command", "option"], "optional": ["any"] }
+          },
+          "to": []
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "m",
+            "modifiers": { "mandatory": ["command", "option"], "optional": ["any"] }
+          },
+          "to": []
+        }
+      ]
+    }
+  ]
+}

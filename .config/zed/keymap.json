@@ -1,0 +1,50 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      // "shift shift": "file_finder::Toggle"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      // "j k": ["workspace::SendKeystrokes", "escape"]
+    }
+  },
+  /* --- Normal mode ------------------------------------------------------ */
+  {
+    "context": "Editor && vim_mode == normal && !menu",
+    "bindings": {
+      /* <space><space>  →  fuzzy-search a file in the project */
+      "space space": "file_finder::Toggle" // same command Cmd-P runs
+    }
+  },
+  /* --- Insert mode ------------------------------------------------------ */
+  {
+    "context": "Editor && vim_mode == insert && !menu",
+    "bindings": {
+      /* Ctrl-E  →  move cursor to end-of-line (respect soft wraps) */
+      "ctrl-e": [
+        "editor::MoveToEndOfLine",
+        {
+          "stop_at_soft_wraps": true
+        }
+      ],
+      /* Ctrl-Q  →  move cursor to beginning-of-line (skip leading indent) */
+      "ctrl-q": [
+        "editor::MoveToBeginningOfLine",
+        {
+          "stop_at_soft_wraps": true,
+          "stop_at_indent": true
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,60 @@
+{
+    "global": { "check_for_updates_on_startup": false },
+    "profiles": [
+        {
+            "complex_modifications": {
+                "rules": [
+                    {
+                        "description": "Mac OSX: disable cmd + option + h + m to prevent minimising all windows",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "h",
+                                    "modifiers": {
+                                        "mandatory": ["command", "option"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "m",
+                                    "modifiers": {
+                                        "mandatory": ["command", "option"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Mac OSX: disable cmd + h to prevent minimising an application window",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "h",
+                                    "modifiers": { "mandatory": ["command"] }
+                                },
+                                "to": [],
+                                "type": "basic"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "name": "Default profile",
+            "selected": true,
+            "simple_modifications": [
+                {
+                    "from": { "key_code": "caps_lock" },
+                    "to": [{ "key_code": "escape" }]
+                }
+            ],
+            "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" }
+        }
+    ]
+}
