@@ -176,6 +176,58 @@ if.app-id = 'com.hnc.Discord'
 run = 'layout floating'
 
 [[on-window-detected]]
+if.app-id = 'com.apple.iCal'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.ActivityMonitor'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.reminders'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.Photos'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.TextEdit'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.MobileSMS'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.ActivityMonitor'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.Preview'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.mitchellh.ghostty'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.finder'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.docker.docker'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.DiskUtility'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.Preview'
+run = 'layout floating'
+
+[[on-window-detected]]
 if.app-name-regex-substring = 'keepassxc'
 run = 'layout floating'
 
@@ -184,17 +236,9 @@ if.app-name-regex-substring = 'microsoft teams'
 run = 'layout floating'
 
 [[on-window-detected]]
-if.app-name-regex-substring = 'calendar'
-run = 'layout floating'
-
-[[on-window-detected]]
 if.app-name-regex-substring = 'trash'
 run = 'layout floating'
 
 [[on-window-detected]]
-if.app-name-regex-substring = 'reminders'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-name-regex-substring = 'preview'
+if.app-name-regex-substring = 'GitKraken Desktop'
 run = 'layout floating'
