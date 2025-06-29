@@ -79,9 +79,12 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # Aliases
 alias vim='nvim'
-alias c='clear'
 alias lsa="eza -a"
 alias ls="eza"
+alias c="code ."
+alias cgo="code . --profile go"
+alias crust="code . --profile rust"
+alias cdotnet="code . --profile dotnet"
 
 # Shell integrations
 eval "$(fzf --zsh)"
