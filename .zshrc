@@ -98,3 +98,8 @@ function y() {
 	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
 	rm -f -- "$tmp"
 }
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/user/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
