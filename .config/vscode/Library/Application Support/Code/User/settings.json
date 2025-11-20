@@ -1,0 +1,313 @@
+{
+    "window.newWindowProfile": "Default",
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "omnisharp.enableEditorConfigSupport": true,
+    "dotnet.backgroundAnalysis.analyzerDiagnosticsScope": "openFiles",
+    "dotnet.backgroundAnalysis.compilerDiagnosticsScope": "openFiles",
+    "workbench.startupEditor": "none",
+    "rust-analyzer.check.command": "clippy",
+    "[rust]": {
+        "editor.defaultFormatter": "rust-lang.rust-analyzer",
+        "editor.formatOnSave": true,
+        "editor.inlayHints.enabled": "on"
+    },
+    "go.useLanguageServer": true,
+    "gopls": {
+        "ui.semanticTokens": true,
+        "hoverKind": "FullDocumentation",
+        "completeFunctionCalls": true,
+        "usePlaceholders": true,
+        "deepCompletion": true,
+        "matcher": "fuzzy"
+    },
+    "editor.minimap.autohide": "mouseover",
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "rust": false,
+        "csharp": true,
+        "go": true
+    },
+    "editor.hover.delay": 120,
+    "editor.hover.sticky": true,
+    "editor.parameterHints.cycle": true,
+    "editor.suggest.preview": true,
+    "editor.suggest.showInlineDetails": true,
+    "editor.hover.enabled": true,
+    "editor.parameterHints.enabled": true,
+    "editor.suggest.showStatusBar": true,
+    "editor.inlineSuggest.showToolbar": "always",
+    "editor.suggest.showMethods": true,
+    "editor.suggest.showFunctions": true,
+    "editor.suggest.showDetails": true,
+    "editor.quickSuggestions": {
+        "strings": true,
+        "comments": true,
+        "other": true
+    },
+    "rust-analyzer.testExplorer": true,
+    "rust-analyzer.diagnostics.styleLints.enable": true,
+    "rust-analyzer.diagnostics.useRustcErrorCode": true,
+    "rust-analyzer.completion.callable.snippets": "fill_arguments",
+    "rust-analyzer.hover.documentation.enable": true,
+    "rust-analyzer.completion.autoimport.enable": true,
+    "rust-analyzer.completion.privateEditable.enable": true,
+    "rust-analyzer.showSyntaxTree": true,
+    // VIM settings
+    "editor.lineNumbers": "relative",
+    "editor.cursorSurroundingLines": 8,
+    "vim.replaceWithRegister": true,
+    "vim.highlightedyank.enable": true,
+    "vim.highlightedyank.color": "#cba6f730",
+    "vim.sneak": true,
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<leader>",
+                "d"
+            ],
+            "after": [
+                "d",
+                "d"
+            ]
+        },
+        {
+            "before": [
+                "<C-n>"
+            ],
+            "commands": [
+                ":nohl"
+            ]
+        },
+        {
+            "before": [
+                "K"
+            ],
+            "commands": [
+                "lineBreakInsert"
+            ],
+            "silent": true
+        }
+    ],
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false
+    },
+    // To improve performance
+    "extensions.experimental.affinity": {
+        "vscodevim.vim": 1
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    // UI Customization
+    // "workbench.colorCustomizations": {
+    //     "editorInlayHint.background": "#00000080",
+    //     "editor.inlineValuesBackground": "#00000080",
+    //     "editorInlayHint.parameterBackground": "#00000080",
+    //     "editorInlayHint.typeBackground": "#00000080",
+    // },
+    "workbench.colorCustomizations": {
+        // Core shells
+        "editor.background": "#0A0A0B",
+        "sideBar.background": "#0A0A0B",
+        "sideBarSectionHeader.background": "#0A0A0B",
+        "panel.background": "#0A0A0B",
+        "statusBar.background": "#0A0A0B",
+        "statusBar.noFolderBackground": "#0A0A0B",
+        "statusBar.debuggingBackground": "#0A0A0B",
+        "titleBar.activeBackground": "#0A0A0B",
+        "titleBar.inactiveBackground": "#0A0A0B",
+        "activityBar.background": "#0A0A0B",
+        "breadcrumb.background": "#0A0A0B",
+        "welcomePage.background": "#0A0A0B",
+        // Tabs & editor groups
+        "tab.activeBackground": "#0A0A0B",
+        "tab.inactiveBackground": "#0A0A0B80",
+        "tab.unfocusedActiveBackground": "#0A0A0B",
+        "tab.unfocusedInactiveBackground": "#0A0A0B80",
+        "tab.hoverBackground": "#0A0A0B80",
+        "tab.activeBorderTop": "#9E60B1", // bright line on the active tab
+        "tab.hoverBorder": "#9E60B144",
+        "tab.border": "#0A0A0B",
+        "editorGroupHeader.tabsBackground": "#0A0A0B",
+        "editorGroupHeader.noTabsBackground": "#0A0A0B",
+        "editorGroup.emptyBackground": "#0A0A0B",
+        // Lists & trees (Explorer, SCM, etc.)
+        "list.activeSelectionBackground": "#9E60B122", // Explorer selected file
+        "list.activeSelectionForeground": "#ffffff", // readable text on selection
+        "list.focusBackground": "#9E60B122",
+        "list.focusOutline": "#9E60B188",
+        "list.highlightForeground": "#9E60B1",
+        "tree.indentGuidesStroke": "#0A0A0B",
+        // Inputs, dropdowns, quick pickers
+        "input.background": "#0A0A0B",
+        "dropdown.background": "#0A0A0B",
+        "quickInput.background": "#0A0A0B",
+        "pickerGroup.border": "#0A0A0B",
+        // Widgets & hovers
+        "editorWidget.background": "#0A0A0B",
+        // General editor widgets (find/replace, etc.) for consistency
+        "editorWidget.border": "#9E60B144",
+        "editorHoverWidget.border": "#9E60B155",
+        "editorHoverWidget.background": "#0A0A0B",
+        "editorHoverWidget.foreground": "#EDEDED",
+        "editorHoverWidget.highlightForeground": "#9E60B1",
+        // IntelliSense (suggest/completion list)
+        "editorSuggestWidget.border": "#9E60B155",
+        "editorSuggestWidget.background": "#0A0A0B",
+        "editorSuggestWidget.foreground": "#EDEDED",
+        "editorSuggestWidget.selectedBackground": "#9E60B122",
+        "editorSuggestWidget.highlightForeground": "#9E60B1",
+        "peekViewEditor.background": "#0A0A0B",
+        "peekViewResult.background": "#0A0A0B",
+        // Panels & terminal
+        "panelSectionHeader.background": "#0A0A0B",
+        "panelTitle.activeBackground": "#0A0A0B",
+        "terminal.background": "#0A0A0B",
+        // Notifications
+        "notifications.background": "#0A0A0B",
+        "notificationCenterHeader.background": "#0A0A0B",
+        // Menus & menubar
+        "menubar.selectionBackground": "#0A0A0B80",
+        "menu.background": "#0A0A0B",
+        "menu.selectionBackground": "#0A0A0B80",
+        // Debug/toolbar
+        "debugToolBar.background": "#0A0A0B",
+        // Scrollbars (slightly translucent so you can still see them)
+        "scrollbarSlider.background": "#0A0A0B80",
+        "scrollbarSlider.hoverBackground": "#0A0A0B80",
+        "scrollbarSlider.activeBackground": "#0A0A0B80",
+        // Borders (blend in so surfaces feel continuous)
+        "sideBar.border": "#0A0A0B",
+        "panel.border": "#0A0A0B",
+        "statusBar.border": "#0A0A0B",
+        "titleBar.border": "#0A0A0B",
+        "editorGroup.border": "#0A0A0B",
+        "editorGroupHeader.border": "#0A0A0B",
+        "panelSection.border": "#0A0A0B",
+        "notificationCenter.border": "#0A0A0B",
+        "notificationToast.border": "#0A0A0B",
+        // Activity bar accents so it doesn't pop
+        "activityBar.activeBackground": "#0A0A0B",
+        "activityBarBadge.background": "#0A0A0B",
+        // === Cursor & current line visibility ===
+        "editorCursor.foreground": "#9E60B1",
+        "editor.lineHighlightBackground": "#9E60B114",
+        "editor.lineHighlightBorder": "#9E60B133",
+        // === Minimap cues ===
+        "minimap.findMatchHighlight": "#9E60B133",
+        "minimap.selectionHighlight": "#9E60B188",
+        // === Inlay hints ===
+        "editorInlayHint.background": "#141419",
+        "editorInlayHint.typeBackground": "#141419",
+        "editorInlayHint.parameterBackground": "#141419",
+        "editorInlayHint.border": "#9E60B122",
+        "editorInlayHint.foreground": "#EDEDEDAA",
+        "editorInlayHint.typeForeground": "#EDEDEDAA",
+        "editorInlayHint.parameterForeground": "#EDEDEDAA",
+        "editorGhostText.background": "#0A0A0B",
+        "editorGhostText.foreground": "#CBB3DCAA",
+        // Subtle depth so overlays stand out
+        "widget.shadow": "#00000088"
+    },
+    "editor.fontFamily": "JetBrains Mono",
+    "workbench.iconTheme": "catppuccin-mocha",
+    "workbench.colorTheme": "One Dark Pro Night Flat",
+    "editor.fontSize": 15,
+    "editor.semanticHighlighting.enabled": true,
+    "editor.inlayHints.enabled": "on",
+    "terminal.integrated.minimumContrastRatio": 1,
+    "window.titleBarStyle": "custom",
+    // "catppuccin.workbenchMode": "minimal",
+    "catppuccin.colorOverrides": {
+        "mocha": {
+            "base": "#0A0A0B",
+            "mantle": "#0A0A0B",
+            "crust": "#0A0A0B",
+        },
+    },
+    // use your accent (pink) on the statusBar as well
+    "catppuccin.italicKeywords": false,
+    "catppuccin.accentColor": "mauve",
+    "catppuccin.customUIColors": {
+        "all": {
+            "breadcrumb.background": "base",
+            "breadcrumb.foreground": "accent",
+        },
+        "mocha": {
+            "statusBar.foreground": "accent",
+        },
+    },
+    "editor.definitionLinkOpensInPeek": true,
+    "editor.experimentalGpuAcceleration": "on",
+    "catppuccin.boldKeywords": false,
+    "editor.fontWeight": "100",
+    "csharp.inlayHints.enableInlayHintsForTypes": true,
+    "dotnet.inlayHints.enableInlayHintsForParameters": true,
+    "dotnet.inlayHints.enableInlayHintsForObjectCreationParameters": true,
+    "csharp.inlayHints.enableInlayHintsForLambdaParameterTypes": true,
+    "csharp.inlayHints.enableInlayHintsForImplicitVariableTypes": true,
+    "csharp.inlayHints.enableInlayHintsForImplicitObjectCreation": true,
+    "dotnet.inlayHints.enableInlayHintsForIndexerParameters": true,
+    "dotnet.inlayHints.enableInlayHintsForLiteralParameters": true,
+    "dotnet.inlayHints.enableInlayHintsForOtherParameters": true,
+    "rust-analyzer.inlayHints.bindingModeHints.enable": true,
+    "go.inlayHints.assignVariableTypes": true,
+    "go.inlayHints.constantValues": true,
+    "go.inlayHints.functionTypeParameters": true,
+    "go.inlayHints.parameterNames": true,
+    "go.inlayHints.rangeVariableTypes": true,
+    "go.inlayHints.compositeLiteralTypes": true,
+    "go.inlayHints.compositeLiteralFields": true,
+    "editor.inlayHints.padding": true,
+    "editor.formatOnSave": true,
+    "window.confirmBeforeClose": "always",
+    "window.dialogStyle": "custom",
+    "search.searchView.keywordSuggestions": true,
+    "search.showLineNumbers": true,
+    "search.smartCase": true,
+    "workbench.activityBar.location": "bottom",
+    "custom-ui-style.electron": {
+        "frame": false,
+        "transparent": true,
+        "opacity": 0.85
+    },
+    "rust-analyzer.inlayHints.genericParameterHints.type.enable": true,
+    "rust-analyzer.inlayHints.implicitDrops.enable": true,
+    "git.mergeEditor": true,
+    "diffEditor.experimental.showMoves": true,
+    "catppuccin.bracketMode": "neovim",
+    "[aspnetcorerazor]": {
+        "editor.defaultFormatter": "ms-dotnettools.csharp"
+    },
+    "editor.aiStats.enabled": true,
+    "gitlens.ai.model": "vscode",
+    "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+    "[java]": {
+        "editor.defaultFormatter": "Oracle.oracle-java"
+    },
+    "jdk.telemetry.enabled": false,
+}

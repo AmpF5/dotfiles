@@ -5,3 +5,4 @@ background-opacity = 0.30
 background-blur = true
 
 keybind = global:cmd+e=toggle_quick_terminal
+Q
