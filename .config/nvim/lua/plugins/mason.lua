@@ -1,6 +1,6 @@
 return {
 	{
-		"williamboman/mason.nvim",
+		"https://github.com/mason-org/mason.nvim",
 		opts = function(_, opts)
 			opts.ensure_installed = opts.ensure_installed or {}
 			vim.list_extend(opts.ensure_installed, {
@@ -18,7 +18,7 @@ return {
 		end,
 	},
 	{
-		"williamboman/mason-lspconfig.nvim",
+		"https://github.com/mason-org/mason-lspconfig.nvim.git",
 		dependencies = { "williamboman/mason.nvim" },
 		opts = {},
 	},

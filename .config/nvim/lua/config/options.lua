@@ -11,9 +11,3 @@ vim.opt.guicursor = {
 	"i-ci:ver25-Cursor/lCursor-blinkwait1000-blinkon500-blinkoff500", -- Insert mode
 	"r-cr:hor20-Cursor/lCursor-blinkwait1000-blinkon500-blinkoff500", -- Replace mode
 }
-
--- Tab and indentation settings
-vim.opt.expandtab = false
-vim.opt.tabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.softtabstop = 4

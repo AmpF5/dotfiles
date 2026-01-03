@@ -20,4 +20,3 @@ map({ "n", "i", "v" }, "<C-s>", "<cmd>w<cr>", { desc = "Save file" })
 -- In insert mode, Ctrl-Q → start of line; Ctrl-E → end of line
 map("i", "<C-q>", "<C-o>^", { desc = "Insert: jump to first non-blank" })
 map("i", "<C-e>", "<C-o>$", { desc = "Insert: jump to end of line" })
-

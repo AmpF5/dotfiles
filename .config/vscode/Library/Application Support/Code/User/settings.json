@@ -27,7 +27,7 @@
         "markdown": false,
         "scminput": false,
         "rust": false,
-        "csharp": true,
+        "csharp": false,
         "go": true
     },
     "editor.hover.delay": 120,
@@ -35,7 +35,7 @@
     "editor.parameterHints.cycle": true,
     "editor.suggest.preview": true,
     "editor.suggest.showInlineDetails": true,
-    "editor.hover.enabled": true,
+    "editor.hover.enabled": "on",
     "editor.parameterHints.enabled": true,
     "editor.suggest.showStatusBar": true,
     "editor.inlineSuggest.showToolbar": "always",
@@ -310,4 +310,7 @@
         "editor.defaultFormatter": "Oracle.oracle-java"
     },
     "jdk.telemetry.enabled": false,
+    "[csharp]": {
+        "editor.defaultFormatter": "ms-dotnettools.csharp"
+    },
 }

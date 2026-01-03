@@ -1,8 +1,8 @@
 # This is the configuration file for Ghostty.
-theme = "catppuccin-mocha"
+theme = "tokyonight-storm"
 font-family = "JetBrains Mono SemiBold"
-background-opacity = 0.30
+background-opacity = 0.95
 background-blur = true
+font-size=15
 
 keybind = global:cmd+e=toggle_quick_terminal
-Q
