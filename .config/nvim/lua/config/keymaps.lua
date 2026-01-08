@@ -12,4 +12,10 @@ vim.keymap.set("n", "gpP", preview.close_all_win, { desc = "Close all preview wi
 
 vim.keymap.set("n", "gpr", preview.goto_preview_references, { desc = "Preview references" })
 
-vim.keymap.set("n", "gp", "<Nop>", { desc = "Disabled default gp" })
+vim.keymap.set("n", "gp", "<Nop>", { noremap = true, silent = true })
+
+vim.keymap.set("n", "gP", "<Nop>", { noremap = true, silent = true })
+
+vim.keymap.set("v", "gp", "<Nop>", { noremap = true, silent = true })
+
+vim.keymap.set("v", "gP", "<Nop>", { noremap = true, silent = true })
