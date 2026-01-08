@@ -3,5 +3,6 @@ return {
 	dependencies = { "rmagatti/logger.nvim" },
 	event = "BufEnter",
 	config = true, -- necessary as per https://github.com/rmagatti/goto-preview/issues/88
-	defult_mappings = true,
+	lazy = false,
+	default_mappings = true,
 }
