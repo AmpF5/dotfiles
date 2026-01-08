@@ -1,22 +1,15 @@
--- shorthand
-local map = vim.keymap.set
+local preview = require("goto-preview")
 
--- normal-mode QoL
-map("n", ";", ":", { desc = "CMD enter command mode" })
+vim.keymap.set("n", "gpd", preview.goto_preview_definition, { desc = "Preview definition" })
 
--- insert-mode escape
-map("i", "jk", "<ESC>")
+vim.keymap.set("n", "gpt", preview.goto_preview_type_definition, { desc = "Preview type definition" })
 
--- delete previous word
-map("i", "<A-BS>", "<C-w>", { desc = "Delete previous word" })
-map("i", "<M-BS>", "<C-w>", { desc = "Delete previous word (mac term)" })
+vim.keymap.set("n", "gpi", preview.goto_preview_implementation, { desc = "Preview implementation" })
 
--- LSP code actions
-map({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, { desc = "LSP code actions" })
+vim.keymap.set("n", "gpD", preview.goto_preview_declaration, { desc = "Preview declaration" })
 
--- Quick-save with Ctrl-S in normal, insert & visual modes
-map({ "n", "i", "v" }, "<C-s>", "<cmd>w<cr>", { desc = "Save file" })
+vim.keymap.set("n", "gpP", preview.close_all_win, { desc = "Close all preview windows" })
 
--- In insert mode, Ctrl-Q → start of line; Ctrl-E → end of line
-map("i", "<C-q>", "<C-o>^", { desc = "Insert: jump to first non-blank" })
-map("i", "<C-e>", "<C-o>$", { desc = "Insert: jump to end of line" })
+vim.keymap.set("n", "gpr", preview.goto_preview_references, { desc = "Preview references" })
+
+vim.keymap.set("n", "gp", "<Nop>", { desc = "Disabled default gp" })
