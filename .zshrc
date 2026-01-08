@@ -19,17 +19,36 @@ if [ ! -d "$ZINIT_HOME" ]; then
    git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
 fi
 
-# Source/Load zinit
+  # Source/Load zinit
 source "${ZINIT_HOME}/zinit.zsh"
 
 # Add in Powerlevel10k
 zinit ice depth=1; zinit light romkatv/powerlevel10k
 
+fpath+=~/.zfunc
+
 # Add in zsh plugins
-zinit light zsh-users/zsh-syntax-highlighting
+# 1. Enable Zsh completion system
+autoload -Uz compinit && compinit
+zinit cdreplay -q
+
+# 2. Load completions
 zinit light zsh-users/zsh-completions
+
+# 3. Specifically for Cargo/Rust if they are missing
+zinit ice as"completion"
+rustup completions zsh > ~/.zfunc/_rustup # Run once manually
+
+# 4. Interactive UI plugins
 zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
+
+# 5. Syntax highlighting MUST be last
+zinit light zsh-users/zsh-syntax-highlighting
+
+zinit light z-shell/zi-console
+
+zinit light jeffreytse/zsh-vi-mode
 
 # Add in snippets
 zinit snippet OMZL::git.zsh
