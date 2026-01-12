@@ -4,6 +4,6 @@ theme = "Catppuccin Mocha"
 font-family = "Monaspace Neon Medium"
 # background-opacity = 0.95
 # background-blur = true
-font-size=15
+font-size=16
 
 keybind = global:cmd+e=toggle_quick_terminal
