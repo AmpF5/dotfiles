@@ -27,30 +27,15 @@ zinit ice depth=1; zinit light romkatv/powerlevel10k
 
 fpath+=~/.zfunc
 
-# Add in zsh plugins
-# 1. Enable Zsh completion system
-autoload -Uz compinit && compinit
-zinit cdreplay -q
-
-# 2. Load completions
+#### PLUGINS ####
 zinit light zsh-users/zsh-completions
-
-# 3. Specifically for Cargo/Rust if they are missing
-zinit ice as"completion"
-rustup completions zsh > ~/.zfunc/_rustup # Run once manually
-
-# 4. Interactive UI plugins
 zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
-
-# 5. Syntax highlighting MUST be last
 zinit light zsh-users/zsh-syntax-highlighting
-
-zinit light z-shell/zi-console
-
+zinit light jeffreytse/zsh-vi-mode
 zinit light jeffreytse/zsh-vi-mode
 
-# Add in snippets
+#### SNIPPETS ####  
 zinit snippet OMZL::git.zsh
 zinit snippet OMZP::git
 zinit snippet OMZP::sudo
@@ -60,7 +45,6 @@ zinit snippet OMZP::kubectl
 zinit snippet OMZP::kubectx
 zinit snippet OMZP::command-not-found
 
-# Load completions
 autoload -Uz compinit && compinit
 
 zinit cdreplay -q
@@ -115,6 +99,4 @@ function y() {
 }
 # The following lines have been added by Docker Desktop to enable Docker CLI completions.
 fpath=(/Users/user/.docker/completions $fpath)
-autoload -Uz compinit
-compinit
 # End of Docker CLI completions
