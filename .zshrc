@@ -26,6 +26,7 @@ source "${ZINIT_HOME}/zinit.zsh"
 zinit ice depth=1; zinit light romkatv/powerlevel10k
 
 fpath+=~/.zfunc
+fpath=(/Users/user/.docker/completions $fpath)
 
 #### PLUGINS ####
 zinit light zsh-users/zsh-completions
@@ -97,6 +98,3 @@ function y() {
 	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
 	rm -f -- "$tmp"
 }
-# The following lines have been added by Docker Desktop to enable Docker CLI completions.
-fpath=(/Users/user/.docker/completions $fpath)
-# End of Docker CLI completions
