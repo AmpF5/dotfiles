@@ -7,9 +7,9 @@
     "workbench.startupEditor": "none",
     "rust-analyzer.check.command": "clippy",
     "[rust]": {
-        "editor.defaultFormatter": "rust-lang.rust-analyzer",
         "editor.formatOnSave": true,
-        "editor.inlayHints.enabled": "on"
+        "editor.inlayHints.enabled": "on",
+        "editor.parameterHints.enabled": true,
     },
     "go.useLanguageServer": true,
     "gopls": {
@@ -47,74 +47,10 @@
         "comments": true,
         "other": true
     },
-    "rust-analyzer.testExplorer": true,
-    "rust-analyzer.diagnostics.styleLints.enable": true,
-    "rust-analyzer.diagnostics.useRustcErrorCode": true,
-    "rust-analyzer.completion.callable.snippets": "fill_arguments",
-    "rust-analyzer.hover.documentation.enable": true,
-    "rust-analyzer.completion.autoimport.enable": true,
-    "rust-analyzer.completion.privateEditable.enable": true,
-    "rust-analyzer.showSyntaxTree": true,
-    // VIM settings
     "editor.lineNumbers": "relative",
     "editor.cursorSurroundingLines": 8,
-    "vim.replaceWithRegister": true,
-    "vim.highlightedyank.enable": true,
-    "vim.highlightedyank.color": "#cba6f730",
-    "vim.sneak": true,
-    "vim.easymotion": true,
-    "vim.incsearch": true,
-    "vim.useSystemClipboard": true,
-    "vim.useCtrlKeys": true,
-    "vim.hlsearch": true,
-    "vim.insertModeKeyBindings": [
-        {
-            "before": [
-                "j",
-                "j"
-            ],
-            "after": [
-                "<Esc>"
-            ]
-        }
-    ],
-    "vim.normalModeKeyBindingsNonRecursive": [
-        {
-            "before": [
-                "<leader>",
-                "d"
-            ],
-            "after": [
-                "d",
-                "d"
-            ]
-        },
-        {
-            "before": [
-                "<C-n>"
-            ],
-            "commands": [
-                ":nohl"
-            ]
-        },
-        {
-            "before": [
-                "K"
-            ],
-            "commands": [
-                "lineBreakInsert"
-            ],
-            "silent": true
-        }
-    ],
-    "vim.leader": "<space>",
-    "vim.handleKeys": {
-        "<C-a>": false,
-        "<C-f>": false
-    },
     // To improve performance
     "extensions.experimental.affinity": {
-        "vscodevim.vim": 1,
         "asvetliakov.vscode-neovim": 1
     },
     "[json]": {
@@ -234,10 +170,10 @@
         // Subtle depth so overlays stand out
         "widget.shadow": "#00000088"
     },
-    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontFamily": "Monaspace Neon Medium",
     "workbench.iconTheme": "catppuccin-mocha",
     "workbench.colorTheme": "Catppuccin Mocha",
-    "editor.fontSize": 15,
+    "editor.fontSize": 16,
     "editor.semanticHighlighting.enabled": true,
     "editor.inlayHints.enabled": "on",
     "terminal.integrated.minimumContrastRatio": 1,
@@ -275,7 +211,6 @@
     "dotnet.inlayHints.enableInlayHintsForIndexerParameters": true,
     "dotnet.inlayHints.enableInlayHintsForLiteralParameters": true,
     "dotnet.inlayHints.enableInlayHintsForOtherParameters": true,
-    "rust-analyzer.inlayHints.bindingModeHints.enable": true,
     "go.inlayHints.assignVariableTypes": true,
     "go.inlayHints.constantValues": true,
     "go.inlayHints.functionTypeParameters": true,
@@ -296,8 +231,6 @@
         "transparent": true,
         "opacity": 0.95
     },
-    "rust-analyzer.inlayHints.genericParameterHints.type.enable": true,
-    "rust-analyzer.inlayHints.implicitDrops.enable": true,
     "git.mergeEditor": true,
     "diffEditor.experimental.showMoves": true,
     "catppuccin.bracketMode": "neovim",
@@ -315,4 +248,17 @@
         "editor.defaultFormatter": "ms-dotnettools.csharp"
     },
     "playwright.reuseBrowser": false,
+    "editor.minimap.enabled": false,
+    "debug.console.fontSize": 16,
+    "terminal.integrated.fontSize": 16,
+    "binocular.command.commands": [
+        {
+            "shellCommand": "git checkout $(git fuzzy log)",
+            "commandIdentifier": "Git fuzzy log"
+        },
+        {
+            "shellCommand": "git checkout $(git fuzzy log ${file})",
+            "commandIdentifier": "Git fuzzy log current file"
+        }
+    ],
 }
