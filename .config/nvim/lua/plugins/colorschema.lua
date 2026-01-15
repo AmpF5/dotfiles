@@ -6,7 +6,12 @@ return {
 		priority = 1000,
 		opts = {
 			flavour = "mocha",
-			transparent_background = false,
+			transparent_background = true,
+			float = {
+				transparent = true,
+				solid = true,
+			},
+			no_italic = true,
 			lsp_styles = {
 				underlines = {
 					errors = { "undercurl" },
@@ -53,4 +58,3 @@ return {
 		},
 	},
 }
-
