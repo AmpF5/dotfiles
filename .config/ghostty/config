@@ -1,9 +1,25 @@
 # This is the configuration file for Ghostty.
+
+# Theme 
 theme = "Catppuccin Mocha"
+background = "#09090b"
+
+# Font
 # font-family = "JetBrains Mono SemiBold"
-font-family = "Monaspace Neon Medium"
-# background-opacity = 0.95
-# background-blur = true
+# font-family = "Monaspace Neon Medium"
+font-family = "Fira Code Retina"
 font-size=16
+font-thicken = true 
+
+
+# Appearance
+background-opacity = 0.85
+background-blur = 40 
+adjust-cell-height = 5
+
+
+# macOS
+macos-window-buttons = hidden
+macos-titlebar-style = hidden
 
 keybind = global:cmd+e=toggle_quick_terminal
