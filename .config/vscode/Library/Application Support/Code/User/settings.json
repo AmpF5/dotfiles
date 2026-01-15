@@ -261,4 +261,9 @@
             "commandIdentifier": "Git fuzzy log current file"
         }
     ],
+    "gitlens.advanced.externalDiffTool": "difft",
+    "gitlens.advanced.externalDiffToolArgs": [
+        "$LOCAL",
+        "$REMOTE"
+    ]
 }
