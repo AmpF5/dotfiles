@@ -22,12 +22,12 @@
     },
     "editor.minimap.autohide": "mouseover",
     "github.copilot.enable": {
-        "*": false,
+        "*": true,
         "plaintext": false,
         "markdown": false,
         "scminput": false,
         "rust": false,
-        "csharp": false,
+        "csharp": true,
         "go": true
     },
     "editor.hover.delay": 120,
@@ -114,7 +114,8 @@
     },
     // To improve performance
     "extensions.experimental.affinity": {
-        "vscodevim.vim": 1
+        "vscodevim.vim": 1,
+        "asvetliakov.vscode-neovim": 1
     },
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -235,7 +236,7 @@
     },
     "editor.fontFamily": "JetBrains Mono",
     "workbench.iconTheme": "catppuccin-mocha",
-    "workbench.colorTheme": "One Dark Pro Night Flat",
+    "workbench.colorTheme": "Catppuccin Mocha",
     "editor.fontSize": 15,
     "editor.semanticHighlighting.enabled": true,
     "editor.inlayHints.enabled": "on",
@@ -293,7 +294,7 @@
     "custom-ui-style.electron": {
         "frame": false,
         "transparent": true,
-        "opacity": 0.85
+        "opacity": 0.95
     },
     "rust-analyzer.inlayHints.genericParameterHints.type.enable": true,
     "rust-analyzer.inlayHints.implicitDrops.enable": true,
@@ -313,4 +314,5 @@
     "[csharp]": {
         "editor.defaultFormatter": "ms-dotnettools.csharp"
     },
+    "playwright.reuseBrowser": false,
 }
