@@ -66,7 +66,7 @@
     //     "editorInlayHint.parameterBackground": "#00000080",
     //     "editorInlayHint.typeBackground": "#00000080",
     // },
-    "workbench.colorCustomizations": {
+    /*     "workbench.colorCustomizations": {
         // Core shells
         "editor.background": "#0A0A0B",
         "sideBar.background": "#0A0A0B",
@@ -169,10 +169,10 @@
         "editorGhostText.foreground": "#CBB3DCAA",
         // Subtle depth so overlays stand out
         "widget.shadow": "#00000088"
-    },
+    } */
     "editor.fontFamily": "Monaspace Neon Medium",
     "workbench.iconTheme": "catppuccin-mocha",
-    "workbench.colorTheme": "Catppuccin Mocha",
+    "workbench.colorTheme": "Tokyo Night Storm Frameless",
     "editor.fontSize": 16,
     "editor.semanticHighlighting.enabled": true,
     "editor.inlayHints.enabled": "on",
@@ -228,8 +228,8 @@
     "workbench.activityBar.location": "bottom",
     "custom-ui-style.electron": {
         "frame": false,
-        "transparent": true,
-        "opacity": 0.95
+        "transparent": false,
+        // "opacity": 0.95
     },
     "git.mergeEditor": true,
     "diffEditor.experimental.showMoves": true,
