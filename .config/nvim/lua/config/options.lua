@@ -11,3 +11,13 @@ vim.opt.guicursor = {
 	"i-ci:ver25-Cursor/lCursor-blinkwait1000-blinkon500-blinkoff500", -- Insert mode
 	"r-cr:hor20-Cursor/lCursor-blinkwait1000-blinkon500-blinkoff500", -- Replace mode
 }
+
+-- Disable all inline diagnostics except tiny-inline-diagnostic
+vim.diagnostic.config({
+	virtual_text = false,
+	virtual_lines = false,
+	signs = true,
+	underline = true,
+	update_in_insert = false,
+	severity_sort = true,
+})
