@@ -1,8 +1,11 @@
 # This is the configuration file for Ghostty.
 
 # Theme 
-theme = "Catppuccin Mocha"
-background = "#09090b"
+# Catpuccin
+# theme = "Catppuccin Mocha"
+# background = "#09090b"
+# Tokyo Night
+theme = "TokyoNight Storm"
 
 # Font
 # font-family = "JetBrains Mono SemiBold"
@@ -13,8 +16,8 @@ font-thicken = true
 
 
 # Appearance
-background-opacity = 0.85
-background-blur = 40 
+# background-opacity = 0.85
+# background-blur = 40 
 adjust-cell-height = 5
 
 
