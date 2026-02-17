@@ -1,11 +1,10 @@
 # This is the configuration file for Ghostty.
 
 # Theme 
-# Catpuccin
 # theme = "Catppuccin Mocha"
 # background = "#09090b"
-# Tokyo Night
-theme = "TokyoNight Storm"
+# theme = "TokyoNight Storm"
+theme = "Rose Pine Moon"
 
 # Font
 # font-family = "JetBrains Mono SemiBold"
