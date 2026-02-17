@@ -56,6 +56,7 @@ return {
 		lazy = false,
 		priority = 1000,
 		opts = {
+			style = "storm",
 			styles = {
 				comments = { italic = true },
 				keywords = { italic = false },
@@ -64,11 +65,17 @@ return {
 			},
 		},
 	},
-
+	{
+		"rose-pine/neovim",
+		name = "rose-pine",
+		opts = {
+			-- variant = "moon",
+		},
+	},
 	{
 		"LazyVim/LazyVim",
 		opts = {
-			colorscheme = "tokyonight",
+			colorscheme = "rose-pine",
 		},
 	},
 }
