@@ -6,9 +6,9 @@ return {
 		priority = 1000,
 		opts = {
 			flavour = "mocha",
-			transparent_background = false,
+			transparent_background = true,
 			float = {
-				transparent = false,
+				transparent = true,
 				solid = true,
 			},
 			no_italic = true,
@@ -53,15 +53,16 @@ return {
 	{
 		"folke/tokyonight.nvim",
 		name = "tokyonight",
-		lazy = false,
-		priority = 1000,
 		opts = {
-			style = "storm",
+			style = "moon",
+			transparent = true,
 			styles = {
 				comments = { italic = true },
 				keywords = { italic = false },
 				functions = {},
 				variables = {},
+				sidebars = "transparent",
+				floats = "transparent",
 			},
 		},
 	},
@@ -70,12 +71,15 @@ return {
 		name = "rose-pine",
 		opts = {
 			variant = "moon",
+			styles = {
+				transparency = true,
+			},
 		},
 	},
 	{
 		"LazyVim/LazyVim",
 		opts = {
-			colorscheme = "rose-pine",
+			colorscheme = "catppuccin",
 		},
 	},
 }

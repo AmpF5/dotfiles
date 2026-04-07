@@ -5,6 +5,7 @@
 vim.opt.number = true -- show the absolute number on the current line
 vim.opt.relativenumber = true -- ...and relative numbers everywhere else
 
+vim.o.winborder = "rounded" -- default border for all floating windows (LSP hover, etc.)
 -- Cursor blinking configuration
 vim.opt.guicursor = {
 	"n-v-c:block-Cursor/lCursor-blinkwait1000-blinkon500-blinkoff500", -- Normal, Visual, Command modes
