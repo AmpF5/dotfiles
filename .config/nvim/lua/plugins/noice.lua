@@ -1,6 +1,9 @@
 return {
 	"folke/noice.nvim",
 	opts = {
+		lsp = {
+			signature = { enabled = false },
+		},
 		views = {
 			hover = {
 				border = {

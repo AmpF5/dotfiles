@@ -37,4 +37,9 @@ else
 	vim.keymap.set("v", "gp", "<Nop>", { noremap = true, silent = true })
 
 	vim.keymap.set("v", "gP", "<Nop>", { noremap = true, silent = true })
+
+	vim.keymap.set("n", "<Esc>", function()
+		require("noice").cmd("dismiss")
+		vim.cmd("nohlsearch")
+	end, { silent = true, desc = "Dismiss noice & clear search highlight" })
 end
